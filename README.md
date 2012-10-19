@@ -1,5 +1,8 @@
 #RepoDepo Repository Manager
 
+_This is a git clone of the [Sourceforge](https://sourceforge.net/projects/repodepo/) hosted project by [Dirk van der Walt](https://sourceforge.net/users/dvdwalt). Please contact him for any help/suggestions or miscellaneous inquires._
+
+
 ##Introduction
 
 RepoDepo repository manager is a web based front-end to reprepro.
