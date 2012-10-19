@@ -1,0 +1,93 @@
+<?
+
+class AppController extends Controller {
+    /**
+     * components
+     * 
+     * Array of components to load for every controller in the application
+     * 
+     * @var $components array
+     * @access public
+     */
+    var $components = array('Auth');
+    var $uses = array('Group','User','Realm');
+    //var $helpers = array('Form','Html', 'Javascript');
+    /**
+     * beforeFilter
+     * 
+     * Application hook which runs prior to each controller action
+     * 
+     * @access public 
+     */
+    function beforeFilter() {
+
+        $this->Auth->allow('register');
+        //$this->Auth->logoutRedirect = '/';  
+        //Set the default redirect for users who login  
+        //$this->Auth->loginRedirect = '/';
+       // $this->Auth->loginAction = '/jan/koos/';
+       //  $this->Auth->loginAction = array(
+       //         'admin' => false,
+       //         'plugin' => null,
+        //        'controller' => 'usrs',
+       //         'action' => 'lgin'
+      //  );
+
+
+    }
+
+    function beforeRender(){
+
+        if($this->Auth->user()){
+
+            //We are logged in, but is the AuthInfo populated already?
+            if(!$this->Session->check('AuthInfo')){
+                $this->_populate_authinfo();
+            }
+
+        }
+    }
+
+
+    function _populate_authinfo(){
+
+        $auth_info = array();
+
+        //Get the role the user belongs to
+        $user       = $this->Auth->user();
+        $user_id    = $user['User']['id'];
+        $user       = $this->User->find('first',array('conditions' => array('User.id' => $user_id),'recursive' => 1,'fields' => array('User.id','User.username')));
+
+        $group_id   = $user['Group'][0]['id'];
+        $result     = $this->Group->find('first',array('conditions' => array('Group.id' => $group_id),'recursive' => 1, 'fields' => array('Group.id','Group.name')));
+
+        $u                   = $this->Auth->user()
+        $auth_info['User']   = $u['User'];
+        $auth_info['Realms'] = $user['Realm'];
+        $auth_info['Group']  = $user['Group'][0];   //User can only belong to one group
+
+        //First we populate the permissions wit hte Groups permissions
+        foreach($result['Permission'] as $permission){
+
+            $perm_name  = $permission['name'];
+            $perm_state = $permission['state'];
+
+            $auth_info['Permissions']["$perm_name"] = $perm_state;
+
+        } 
+        
+        //Now we see if the individual user do have some permissions - This will override the group permissions
+        foreach($user['Permission'] as $permission){
+
+            $perm_name  = $permission['name'];
+            $perm_state = $permission['state'];
+            $auth_info['Permissions']["$perm_name"] = $perm_state;
+
+        }
+        $this->Session->write('AuthInfo',$auth_info);
+    }
+
+ 
+}
+
+?>

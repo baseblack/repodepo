@@ -1,0 +1,548 @@
+html, body {
+    height: 100%; 
+    width: 100%;
+    overflow: hidden;   /* erase window level scrollbars */
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    font: 10pt Arial,Myriad,Tahoma,Verdana,sans-serif;
+}
+
+
+#componentsSecuritydlgLogin .dijitDialogCloseIcon {
+background:;    /*Remove the close button in the heading */
+width:0px;
+}
+
+#componentSecurityFeedback {
+ font-weight: bold;
+ color:red;
+ height: 2em;
+}
+
+#contentUpdatesProgressFeedback{
+font-weight: bold;
+ color:red;
+ height: 2em;
+
+}
+
+#contentUpdatesProgress .dijitDialogCloseIcon {
+background:;    /*Remove the close button in the heading */
+width:0px;
+}
+
+
+.frmRequired  {
+
+    width: 130px;
+    height: 30px;
+    float: left;
+    font-weight: bold;
+    color:#393a39;
+    text-align: right;
+    margin-right: 6px;
+}
+
+.frmOptional  {
+
+    width: 130px;
+    height: 30px;
+    float: left;
+    color:#828288;
+    font-weight: normal;
+    text-align: right;
+    margin-right: 6px;
+}
+
+
+label  {
+    width: 130px;
+    height: 30px;
+    float: left;
+    font-weight: bold;
+    color:#393a39;
+    text-align: right;
+    margin-right: 6px;
+}
+
+
+entry  {
+    width: 200px;
+}
+
+
+
+.clearIcon {
+    background-image:url('../img/actions/clear.png');
+    background-repeat:no-repeat;
+    height:18px;
+    width:18px;
+}
+
+.okIcon {
+    background-image:url('../img/actions/ok.png');
+    background-repeat:no-repeat;
+    height:18px;
+    width:18px;
+}
+
+.cancelIcon {
+    background-image:url('../img/actions/cancel.png');
+    background-repeat:no-repeat;
+    height:18px;
+    width:18px;
+}
+
+.saveIcon {
+    background-image:url('../img/actions/save.png');
+    background-repeat:no-repeat;
+    height:18px;
+    width:18px;
+}
+
+.divTabForm {
+    width:30em;
+    height:auto; 
+    background-color: #33ccff;
+    border: 1px solid #000000;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.divTabForm h2,h1 {
+    color: #114354;
+    margin-left: 4em;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.divActions {
+
+    height: 40px;
+    float: right;
+    border: 1px solid #000000;
+    background-color: #08e7fb;
+
+}
+
+.FancyIcon .delete {
+    background-image:url('../img/actions/delete.png');
+    background-repeat:no-repeat;
+    float: left;
+    height:33px;
+    width:33px;
+    cursor: pointer;
+}
+
+.FancyIcon .delete:hover {
+    background-image:url('../img/actions/delete_over.png');
+    background-repeat:no-repeat;
+    height:49px;
+    width:49px;
+    cursor: pointer;
+}
+
+.FancyIcon .add {
+    background-image:url('../img/actions/add.png');
+    background-repeat:no-repeat;
+    float: left;
+    height:33px;
+    width:33px;
+    cursor: pointer;
+}
+
+.FancyIcon .add:hover {
+    background-image:url('../img/actions/add_over.png');
+    background-repeat:no-repeat;
+    height:49px;
+    width:49px;
+    cursor: pointer;
+}
+
+.FancyIcon .update {
+    background-image:url('../img/actions/update.png');
+    background-repeat:no-repeat;
+    float: left;
+    height:33px;
+    width:33px;
+    cursor: pointer;
+}
+
+.FancyIcon .update:hover {
+    background-image:url('../img/actions/update_over.png');
+    background-repeat:no-repeat;
+    height:49px;
+    width:49px;
+    cursor: pointer;
+}
+
+.FancyIcon .update_select {
+    background-image:url('../img/actions/update_select.png');
+    background-repeat:no-repeat;
+    float: left;
+    height:33px;
+    width:33px;
+    cursor: pointer;
+}
+
+.FancyIcon .update_select:hover {
+    background-image:url('../img/actions/update_select_over.png');
+    background-repeat:no-repeat;
+    height:49px;
+    width:49px;
+    cursor: pointer;
+}
+
+.FancyIcon .update_notselect {
+    background-image:url('../img/actions/update_notselect.png');
+    background-repeat:no-repeat;
+    float: left;
+    height:33px;
+    width:33px;
+    cursor: pointer;
+}
+
+.FancyIcon .update_notselect:hover {
+    background-image:url('../img/actions/update_notselect_over.png');
+    background-repeat:no-repeat;
+    height:49px;
+    width:49px;
+    cursor: pointer;
+}
+
+.FancyIcon .view {
+    background-image:url('../img/actions/view.png');
+    background-repeat:no-repeat;
+    float: left;
+    height:33px;
+    width:33px;
+    cursor: pointer;
+}
+
+.FancyIcon .view:hover {
+    background-image:url('../img/actions/view_over.png');
+    background-repeat:no-repeat;
+    height:49px;
+    width:49px;
+    cursor: pointer;
+}
+
+
+.FancyIcon .key {
+    background-image:url('../img/actions/key.png');
+    background-repeat:no-repeat;
+    float: left;
+    height:33px;
+    width:33px;
+    cursor: pointer;
+}
+
+.FancyIcon .key:hover {
+    background-image:url('../img/actions/key_over.png');
+    background-repeat:no-repeat;
+    height:49px;
+    width:49px;
+    cursor: pointer;
+}
+
+
+
+.FancyIcon .add_folder {
+    background-image:url('../img/actions/add_folder.png');
+    background-repeat:no-repeat;
+    float: left;
+    height:33px;
+    width:33px;
+    cursor: pointer;
+}
+
+.FancyIcon .add_folder:hover {
+    background-image:url('../img/actions/add_folder_over.png');
+    background-repeat:no-repeat;
+    height:49px;
+    width:49px;
+    cursor: pointer;
+}
+
+
+.FancyIcon .add_network {
+    background-image:url('../img/actions/add_network.png');
+    background-repeat:no-repeat;
+    float: left;
+    height:33px;
+    width:33px;
+    cursor: pointer;
+}
+
+.FancyIcon .add_network:hover {
+    background-image:url('../img/actions/add_network_over.png');
+    background-repeat:no-repeat;
+    height:49px;
+    width:49px;
+    cursor: pointer;
+}
+
+
+.FancyIcon .blacklist {
+    background-image:url('../img/actions/blacklist.png');
+    background-repeat:no-repeat;
+    float: left;
+    height:33px;
+    width:33px;
+    cursor: pointer;
+}
+
+.FancyIcon .blacklist:hover {
+    background-image:url('../img/actions/blacklist_over.png');
+    background-repeat:no-repeat;
+    height:49px;
+    width:49px;
+    cursor: pointer;
+}
+
+
+.FancyIcon .reload {
+    background-image:url('../img/actions/reload.png');
+    background-repeat:no-repeat;
+    float: left;
+    height:33px;
+    width:33px;
+    cursor: pointer;
+}
+
+.FancyIcon .reload:hover {
+    background-image:url('../img/actions/reload_over.png');
+    background-repeat:no-repeat;
+    height:49px;
+    width:49px;
+    cursor: pointer;
+}
+
+
+.FancyIcon .reports {
+    background-image:url('../img/actions/reports.png');
+    background-repeat:no-repeat;
+    float: left;
+    height:33px;
+    width:33px;
+    cursor: pointer;
+}
+
+.FancyIcon .reports:hover {
+    background-image:url('../img/actions/reports_over.png');
+    background-repeat:no-repeat;
+    height:49px;
+    width:49px;
+    cursor: pointer;
+}
+
+
+
+.tabGridOutside {
+
+    width:100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.tabGrid {
+
+    width:90%;
+    height: 90%;
+    border: 1px solid #000000;
+    background-color: #33ccff;
+    padding: 10px;
+
+}
+
+.tabGridPackages {
+
+    width:90%;
+    height: 90%;
+    border: 1px solid #000000;
+    background-color: #ffcc99;
+    padding: 10px;
+
+}
+
+.tabGridUpdates {
+
+    width:90%;
+    height: 90%;
+    border: 1px solid #000000;
+    background-color: #99ccff;
+    padding: 10px;
+
+}
+
+
+
+.tabGridResults {
+
+    height: 30px;
+    padding: 5px;
+    color: red;
+}
+
+
+.divG {
+    width:100%;
+    height: 85%;
+    border: 1px solid #000000;
+    float: bottom;
+    background-color: #33ccff;
+}
+
+.divBlacklist { 
+    width:30em;
+    height: 420px;
+    background-color: #33ccff;
+    border: 1px solid #000000;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.divBlacklistAction {
+    width:400px;
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.divBlacklistGrid {
+    width:400px;
+    height: 330px;
+    padding: 5px;
+}
+
+.divBlG {
+   border: 1px solid #000000;
+}
+
+
+.lblFeedback {
+
+    color: blue;
+}
+
+.actionUpdates {
+    background: url('../img/update_grad.png') repeat-x; 
+    background-color: #dbeddc;
+    height:100%;
+    width:100%;
+}
+
+.actionPackages {
+    background: url('../img/package_grad.png') repeat-x; 
+    background-color: #fffed8;
+    height:100%;
+    width:100%;
+}
+
+.divBusy {
+   
+    float: right;
+    border: 1px solid #000000;
+}
+
+.divTop {
+    height: 40px;
+    padding: 10px;
+}
+
+.divBottom {
+    padding: 10px;
+}
+
+
+.divGridAction {
+    height: 40px;
+    padding: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.divGrid {
+
+    border: 1px solid #000000;
+    height: 99%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.divBgUpdates {
+    background: #ef2d33 url('../img/update_grad.png') repeat-x;
+    padding:    20px; 
+}
+
+.divPackUpdates {
+    background: #fffed8 url('../img/package_grad.png') repeat-x;
+    padding:    20px; 
+}
+
+.divGridResults {
+
+    height: 30px;
+    padding: 5px;
+    color: red;
+}
+
+.homeTab {
+    background-image:url('../img/tabs/home.png');
+    background-repeat:no-repeat;
+    height:22px;
+    width:22px;
+}
+
+.updatesTab {
+    background-image:url('../img/tabs/updates.png');
+    background-repeat:no-repeat;
+    height:22px;
+    width:22px;
+}
+
+.packagesTab {
+    background-image:url('../img/tabs/packages.png');
+    background-repeat:no-repeat;
+    height:22px;
+    width:22px;
+}
+
+.reportsTab {
+    background-image:url('../img/tabs/reports.png');
+    background-repeat:no-repeat;
+    height:22px;
+    width:22px;
+}
+
+.configureTab {
+    background-image:url('../img/tabs/configure.png');
+    background-repeat:no-repeat;
+    height:22px;
+    width:22px;
+}
+
+.filesTab {
+    background-image:url('../img/tabs/files.png');
+    background-repeat:no-repeat;
+    height:32px;
+    width:32px;
+}
+
+.historyTab {
+    background-image:url('../img/tabs/history.png');
+    background-repeat:no-repeat;
+    height:32px;
+    width:32px;
+}
+
+.detailTab {
+    background-image:url('../img/tabs/detail.png');
+    background-repeat:no-repeat;
+    height:32px;
+    width:32px;
+}
+

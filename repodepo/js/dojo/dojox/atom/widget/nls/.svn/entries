@@ -1,0 +1,245 @@
+10
+
+dir
+4
+svn://svn.code.sf.net/p/repodepo/code/trunk/repodepo/js/dojo/dojox/atom/widget/nls
+svn://svn.code.sf.net/p/repodepo/code
+
+
+
+2010-06-11T12:12:52.545269Z
+2
+dvdwalt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+f50f4adf-917f-4903-b4d6-198f8d358405
+
+da
+dir
+
+sv
+dir
+
+de
+dir
+
+ja
+dir
+
+he
+dir
+
+fi
+dir
+
+nb
+dir
+
+PeopleEditor.js
+file
+
+
+
+
+2012-10-19T10:01:30.248663Z
+9e35b83ed253f93253c412de1bcbe138
+2010-06-11T12:12:52.545269Z
+2
+dvdwalt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+75
+
+FeedEntryEditor.js
+file
+
+
+
+
+2012-10-19T10:01:30.248663Z
+a41e4df86e517bfdba39c4c67d14be59
+2010-06-11T12:12:52.545269Z
+2
+dvdwalt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+71
+
+fr
+dir
+
+nl
+dir
+
+th
+dir
+
+pl
+dir
+
+hu
+dir
+
+zh
+dir
+
+FeedViewerEntry.js
+file
+
+
+
+
+2012-10-19T10:01:30.248663Z
+08d443388a4b62bae24eb25c72fcb21f
+2010-06-11T12:12:52.545269Z
+2
+dvdwalt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+29
+
+FeedEntryViewer.js
+file
+
+
+
+
+2012-10-19T10:01:30.248663Z
+5c1ceedd6fb83f72c35ddc1ea4b8f28c
+2010-06-11T12:12:52.545269Z
+2
+dvdwalt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+194
+
+pt
+dir
+
+ca
+dir
+
+tr
+dir
+
+ru
+dir
+
+el
+dir
+
+ar
+dir
+
+pt-pt
+dir
+
+cs
+dir
+
+es
+dir
+
+zh-tw
+dir
+
+ko
+dir
+
+it
+dir
+
+sk
+dir
+
+sl
+dir
+
